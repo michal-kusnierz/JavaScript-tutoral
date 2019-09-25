@@ -1,12 +1,10 @@
-var a = "apple";
+var a = 6;
 var b = 5;
 
-if (isNaN(a)){
-
-    console.log("that aint even a number, thickie");
-
-} else{
-
+// double negative
+if (!isNaN(a)){
     console.log("meaning of life is " + (a * b));
+    //console.log("that aint even a number, thickie");
 
-}
+} 
+    
