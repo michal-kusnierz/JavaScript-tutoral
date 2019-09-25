@@ -1,2 +1,2 @@
-# JavaScript-tutoral
-JS with The Net Ninja
+# JavaScript-tutorial
+JavaScript with The Net Ninja
