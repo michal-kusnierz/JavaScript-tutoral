@@ -1,10 +1,7 @@
-var age = 5;
-
-while (age < 10){
-
-    console.log("Your age is less than 10");
-    age++;
+for (age = 0; age < 10; age++){
     
+    console.log("You age is less than 10");
+
 }
 
-document.write("You are now over 10");
+document.write("you are now over 10");
