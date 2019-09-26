@@ -1,10 +1,6 @@
-var a = 6;
-var b = 5;
-
-// double negative
-if (!isNaN(a)){
-    console.log("meaning of life is " + (a * b));
-    //console.log("that aint even a number, thickie");
-
-} 
-    
+var myString = 'I\'m a "fun ninja" string';
+if (myString.indexOf("ninja") === -1){
+	console.log("the word ninja is not in the string");
+} else{
+	console.log("the word ninja starts at position " + myString.indexOf("ninja"));
+}
