@@ -1,30 +1,17 @@
-var myCar = new Object(); 	//created new object
-myCar.maxSpeed = 50;		//assign new properties
-myCar.driver = "Shaun";		
+var myCar2 = {
 
-console.log(myCar.driver);  //"Shaun"
-
-myCar.drive = function(){console.log("now driving");}
-;
-
-// to call a function:
-myCar.drive();
-
-  /* short-hand to create an Object:
-var myCar2 = {maxSpeed: 70, driver: "Net Ninja", drive: function(){console.log("now driving again");} };
-
-console.log(myCar2.driver);
-console.log(myCar2.maxSpeed);
-myCar2.drive();
-  */
-
-var myCar2 = 
-	{maxSpeed: 70, 
+    maxSpeed: 70, 
 	driver: "Net Ninja", 
 	drive: function(speed, time){
 		console.log(speed * time);
-	}
+    },
+    test: function(){
+        console.log(this);
+    }
+
 };
+
+
 console.log(myCar2.maxSpeed);
 myCar2.drive(50,3); 
-    // return answer 'how many km we drive with speed '50' and in time '3'
+myCar2.test();
