@@ -1,13 +1,30 @@
-/* var string1 = "abc";
-var string2 = "ABC";
+var myCar = new Object(); 	//created new object
+myCar.maxSpeed = 50;		//assign new properties
+myCar.driver = "Shaun";		
 
-console.log(string1 === string2);
+console.log(myCar.driver);  //"Shaun"
 
-*/ 
-//the one above is going to return false. 
+myCar.drive = function(){console.log("now driving");}
+;
 
-var string1 = "abc";
-var string2 = "Abc";
+// to call a function:
+myCar.drive();
 
-console.log(string1.toLowerCase() === string2.toLowerCase());
+  /* short-hand to create an Object:
+var myCar2 = {maxSpeed: 70, driver: "Net Ninja", drive: function(){console.log("now driving again");} };
 
+console.log(myCar2.driver);
+console.log(myCar2.maxSpeed);
+myCar2.drive();
+  */
+
+var myCar2 = 
+	{maxSpeed: 70, 
+	driver: "Net Ninja", 
+	drive: function(speed, time){
+		console.log(speed * time);
+	}
+};
+console.log(myCar2.maxSpeed);
+myCar2.drive(50,3); 
+    // return answer 'how many km we drive with speed '50' and in time '3'
