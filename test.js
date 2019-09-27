@@ -1,24 +1,9 @@
-// var myForm = document.forms.myForm;
-// myForm.name.onfocus = function(){
-//   myForm.name.style.border = "4px solid pink";
-// }
+var myPara = document.getElementById("content").getElementsByTagName("p")[5];
+var myPara2 = $("#content p:last-child");
 
-
-// myForm.name.onblur = function(){
-//   myForm.name.style.border = "none";
-// }
-
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
-
-myForm.onsubmit = function(){
-
-  if(myForm.name.value == ""){
-    message.innerHTML = "please enter a name";    
-    return false;
-  } else{
-    message.innerHTML = "";
-    return true;
-  }
-
-};
+myPara2.addClass("test");
+myPara2.removeClass("test");
+myPara2.fadeOut();
+myPara2.fadeIn();
+myPara2.css({position: "relative", color: "red"})
+myPara2.animate({left: "50px"});
