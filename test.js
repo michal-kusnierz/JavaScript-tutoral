@@ -1,28 +1,13 @@
-var birthday = new Date(1980,3,22, 11,15,25);
-var birthday2 = new Date(1980,3,22, 11,15,25);
+var title = document.getElementById("test click");
+var title2 = document.getElementById("test hover");
 
+//creating an event with name 'title'
+//title.onclick = function(){};
 
-console.log(birthday.getMonth());
-console.log(birthday.getFullYear());
-console.log(birthday.getDate());
-console.log(birthday.getDay());
-console.log(birthday.getHours());
-
-console.log(birthday.getTime());
-// get the number of milliseconds since 1st Jan 1970
-
-
-// to compare dates
-if(birthday == birthday2){
-	console.log("birthdays are equal");
-} else{
-	console.log("birthdays are not equal");
-}
-
-//why are they not equal? because they are different objects, but we can compare Time:
-
-if(birthday.getTime() == birthday2.getTime()){
-	console.log("birthdays are equal");
-} else{
-	console.log("birthdays are not equal");
-}
+title.onclick = function(){
+  alert("you clicked me");
+};
+ 
+title2.onmouseover = function(){
+ alert("you hovered your mouse over me ;)");
+};
