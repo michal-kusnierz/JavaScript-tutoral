@@ -14,4 +14,11 @@ function changeColour(){
 
 }
 
-setInterval(changeColour, 3000);
+var myTimer = setInterval(changeColour, 3000);
+
+colourChanger.onclick = function(){
+
+  clearInterval(myTimer);
+  colourChanger.innerHTML = "Timer stopped";
+
+};
