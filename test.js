@@ -1,10 +1,17 @@
-var myMessage = document.getElementById("message");
+var colourChanger = document.getElementById("colour-changer");
+var colours = ["red", "blue", "green", "pink"];
+var counter = 0;
 
-function showMessage(){
+function changeColour(){
 
-  myMessage.className = "show";
+  if(counter >= colours.length){
+      counter = 0;
+  }
+  
+  colourChanger.style.background = colours
+  [counter];
+  counter++;
 
 }
 
-setTimeout(showMessage, 3000);
-
+setInterval(changeColour, 3000);
