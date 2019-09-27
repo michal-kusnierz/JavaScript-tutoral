@@ -1,13 +1,17 @@
-var title = document.getElementById("test click");
-var title2 = document.getElementById("test hover");
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-//creating an event with name 'title'
-//title.onclick = function(){};
+button.onclick = function(){
 
-title.onclick = function(){
-  alert("you clicked me");
+  if(content.className == "open"){
+    //shrink the box
+      content.className = ""; // "" == nothing
+      button.innerHTML = "Show More";
+  } else{
+    //expand the box  
+      content.className = "open";
+      button.innerHTML = "Show Less";
+  }  
+
 };
- 
-title2.onmouseover = function(){
- alert("you hovered your mouse over me ;)");
-};
+
